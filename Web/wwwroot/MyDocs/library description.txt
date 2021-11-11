@@ -1,0 +1,15 @@
+﻿- use the DinkToPdf library to generate PDF documents in ASP.NET Core 5 applications.
+- DinkToPdf is a .NET Core P/Invoke wrapper to the wkhtmltopdf library, 
+  which renders HTML to PDF (and other formats) using the Qt WebKit rendering engine.
+
+----------------------------------------------------------------------------------------------------------
+* Steps:
+----------------------------------------------------------------------------------------------------------
+1- Install the DinkToPdf NuGet package
+2- Register the DinkToPdf library with the IoC container
+3- Create a ReportService class in ASP.NET Core 5
+	This class will contain the logic for generating the PDF document.
+4- The service will give us byte[] that contains the pdfFile content.
+5- We can use 
+	File(byte[] content, string contentType, string fileDownloadName)
+  to get the Pdf File
